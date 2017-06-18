@@ -13,9 +13,7 @@ License URI: https://opensource.org/licenses/MIT
 
 if (!defined('WPINC')) { die; }
 
-define('MAINTENANCE_WP_NAME', 'Maintenance WP');
-define('MAINTENANCE_WP_DESCRIPTION', 'Show visitors a clean temporary website when undergoing maintenance.');
-define('MAINTENANCE_WP_URL', 'https://github.com/operat/maintenance-wp');
+define('MAINTENANCE_WP_MESSAGE', '<b>The temporary website is active.</b> Anyone who\'s not a logged in user with admin rights won\'t see the proper website.');
 
 require_once 'MaintenanceWP.Maintenance.php';
 

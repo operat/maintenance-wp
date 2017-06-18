@@ -25,9 +25,7 @@ class MaintenanceWP_Maintenance {
 
    // Show message in WP admin
    public static function showAdminMessage() {
-      $message = 'The temporary website is active. Anyone who\'s not a logged in user with admin rights won\'t see the proper website.';
-
-      echo '<div class="notice notice-warning"><p>' . $message . '</p></div>';
+      echo '<div class="notice notice-warning"><p>' . MAINTENANCE_WP_MESSAGE . '</p></div>';
    }
 
 }
