@@ -4,11 +4,11 @@ Plugin Name: Maintenance WP
 Plugin URI: https://github.com/operat/maintenance-wp
 GitHub Plugin URI: https://github.com/operat/maintenance-wp
 Description: Show visitors a clean temporary website when undergoing maintenance.
-Version: 1.0
+Version: 1.1
 Author: Operat
 Author URI: https://www.operat.de
-License: MIT
-License URI: https://opensource.org/licenses/MIT
+License: GNU GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 if (!defined('WPINC')) { die; }
