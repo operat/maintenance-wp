@@ -26,8 +26,11 @@
       <div class="message">
          <img class="message__logo" src="<?php echo plugins_url('img/maintenance-wp-logo.png', __FILE__) ; ?>" width="112" height="112" alt="Maintenance WP Logo">
 
-         <p class="message__text">This website is temporarily not available due to maintenance.</p>
-         <p class="message__text">Please come back later.</p>
+         <?php foreach (get_option('maintenance_wp_options') as $key => $value) { ?>
+            <?php if ($value) { ?>
+               <p class="message__text"><?php echo sanitize_text_field($value); ?></p>
+            <?php } ?>
+         <?php } ?>
       </div>
    </main>
 </body>
